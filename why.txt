@@ -1,0 +1,41 @@
+Team Progressives -- Sarah Yoon and Kathy Lau
+APCS2 pd10
+HW10 -- Justify
+2016-03-08
+
+The runtime classification of mergesort is O(n*log(n)). This is to say that for
+n elements, it takes n*log(n) comparisons total.
+
+Proof by Induction
+
+Let f(n) be the number of comparisons needed for n elements.
+Prove: f(n) = n * log(n)
+
+Recurrence: f(n) = f(n/2) + f(n/2) + n
+                    /         \       \
+              left side   right side   merge
+
+Claim: If this recurrence is true, f(n) = n * log(n) must be true.
+
+f(n) = 0, n=1.
+f(n) = 2f(n/2) + n, n>=2.
+
+Base Case:
+n=2
+f(2) = 2f(1) + 2
+     = 0 + 2
+     = 2 :)
+f(2) = 2 log(2) = 2 :)
+
+Inductive Hypothesis:
+If f(k) = 2f(k/2) + k implies f(k) = k * log(k), prove f(2k) = 2k * log(2k).
+
+Proof:
+
+f(2k) = 2f(k) + 2k
+      = 2k * log(k) + 2k
+      = 2k * (log(k) + 1)
+      = 2k * (log(k) + log(2))
+      = 2k * log(2k) :D
+
+C'est tout!
