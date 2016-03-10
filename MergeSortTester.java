@@ -12,7 +12,9 @@
   ...
   n= 10000  time: 830 deciseconds
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  Though the data doesn't quite match up with the hypothesis that the
+  runtime for mergesort is n * log(n), it seems to roughly follow the right
+  pattern.
   ======================================*/
 
 public class MergeSortTester
