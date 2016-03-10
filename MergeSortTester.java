@@ -40,7 +40,7 @@ public class MergeSortTester
            long end = System.nanoTime();
            trials[i] = end - beg;
         }
-       System.out.println( "Rergsort of size" + n + " takes approx. : \t" + ( mean(trials) / 100000.0 ) + " deciseconds");
+       System.out.println( "Mergsort of size" + n + " takes approx. : \t" + ( mean(trials) / 100000.0 ) + " deciseconds");
 
   }//end main
 
