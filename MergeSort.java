@@ -36,7 +36,6 @@ public class MergeSort {
     	else {
   		retArr[pos] = b[bPos];
   		bPos++; }
-
   	  pos++;}
 
 	//one array is empty
@@ -92,20 +91,10 @@ public class MergeSort {
 	System.out.println("]");
     }
     //---------------------------------------------------
-/*
-public static void foo(int[] endymion){
-  for (int i = 0; i < endymion.length; i ++){
-    endymion[i]=0;
-  }
-}*/
+
 
     //main method for testing
     public static void main( String [] args ) {
-int[] bacchus = {1,3,4,7};
-printArray(bacchus);
-foo(bacchus);
-printArray(bacchus);
-
 
 	/*~~~~~~~~~~~~~~ Ye Olde Tester Bar ~~~~~~~~~~~~~~
 	int[] arr0 = {0};
