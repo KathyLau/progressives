@@ -1,18 +1,24 @@
 /*======================================
   class MergeSortTester
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  <<MergeSort>>
+    1. If array size == 1, array is sorted
+    2. Else split array in half and recurse on each half
+    3. When each of those halves is returned sorted, merge them.
+       (Continually append smaller val from front of each half to new array.)
+    4. If one half is exhausted, add the other half onto the new sorted array.
   BIG-OH CLASSIFICATION OF ALGORITHM:
     O(n*log(n))
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
   n=1       time: 1.9 deciseconds
   n=10      time: 2.3 deciseconds
-  n=100     time: 5.7 deciseconds
+  n=100     time: 5.77 deciseconds
   ...
+  n=1000    time: 88.8 deciseconds
   n= 10000  time: 830 deciseconds
   ANALYSIS:
-  <INSERT YOUR RESULTS ANALYSIS HERE>
+  Pretty solid. It followed the induction proof.
   ======================================*/
 
 public class MergeSortTester
